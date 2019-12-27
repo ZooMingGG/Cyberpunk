@@ -5,14 +5,16 @@
 }
 
 body {
+    margin: 40px auto 0;
+    padding: 0;
+    height: 540px;
+    width: 960px;
     background-color: #000000;
 }
 
 .content {
-    margin: 0 auto;
-    padding: 0;
-    height: 540px;
-    width: 960px;
+    width: 100%;
+    height: 100%;
     background: url('../images/Cyberpunk.png') center no-repeat;
     background-size: cover;
 }
