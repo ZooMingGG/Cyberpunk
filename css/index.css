@@ -67,8 +67,17 @@ body {
     background: linear-gradient(to right, #ff2a00, #ff8a00, #66ff00);
 }
 
+.block-4 {
+    width: 240px;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.15;
+    background: linear-gradient(to right, #fa0bc5, #93f100);
+}
+
 .block-5 {
-    width: 75px;
+    width: 80px;
     height: 15px;
     top: 0;
     right: 130px;
