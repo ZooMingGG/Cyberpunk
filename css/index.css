@@ -5,11 +5,19 @@
 }
 
 body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.cyberpunk {
     margin: 40px auto 0;
     padding: 0;
     height: 540px;
     width: 960px;
     background-color: #000000;
+    position: relative;
+    overflow: hidden;
 }
 
 .content {
@@ -26,8 +34,9 @@ body {
     background: url('../images/Cyberpunk.logo.png') center no-repeat;
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    bottom: 55px;
+    right: 37px;
+    bottom: 23px;
+    z-index: 1;
 }
 
 #toggle {
@@ -35,7 +44,10 @@ body {
 }
 
 #toggle:checked ~ .block-1,
-.block-2, .block-3, .block-4, .block-5 {
+#toggle:checked ~ .block-2,
+#toggle:checked ~ .block-3,
+#toggle:checked ~ .block-4,
+#toggle:checked ~ .block-5 {
     display: block;
 }
 
@@ -43,4 +55,40 @@ body {
 .block-4, .block-5 {
     display: none;
     position: absolute;
+}
+
+.block-2 {
+    width: 570px;
+    height: 40px;
+    top: 120px;
+    right: 0;
+    background-color: red;
+    opacity: 0.2;
+    background: linear-gradient(to right, #ff2a00, #ff8a00, #66ff00);
+}
+
+.block-5 {
+    width: 75px;
+    height: 15px;
+    top: 0;
+    right: 130px;
+    background: linear-gradient(to right, #66ff00 50%, #ff8a00, #ff2a00); 
+    opacity: 0.15;
+}
+
+.slide-block {
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    animation: slideDown 3s infinite;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(540px);
+    }
 }
