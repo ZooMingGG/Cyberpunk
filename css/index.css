@@ -57,6 +57,26 @@ body {
     position: absolute;
 }
 
+.block-1 {
+    width: 165px;
+    height: 80px;
+    top: 70px;
+    left: 80px;
+    background-color: red;
+    opacity: 0.15;
+}
+
+.block-1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 80px;
+    top: 40px;
+    left: 100px;
+    background-color: red;
+}
+
 .block-2 {
     width: 570px;
     height: 40px;
@@ -90,6 +110,13 @@ body {
     height: 35px;
     background-color: transparent;
     animation: slideDown 3s infinite;
+}
+
+.slide-block-color {
+    width: 100%;
+    height: 100%;
+    background-color: #1e2feb;
+    opacity: 0.3;
 }
 
 @keyframes slideDown {
