@@ -18,3 +18,29 @@ body {
     background: url('../images/Cyberpunk.png') center no-repeat;
     background-size: cover;
 }
+
+.logo {
+    width: 550px;
+    height: 135px;
+    display: block;
+    background: url('../images/Cyberpunk.logo.png') center no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 55px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ .block-1,
+.block-2, .block-3, .block-4, .block-5 {
+    display: block;
+}
+
+.block-1, .block-2, .block-3,
+.block-4, .block-5 {
+    display: none;
+    position: absolute;
+}
