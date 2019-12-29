@@ -54,6 +54,7 @@ body {
     right: 37px;
     bottom: 23px;
     z-index: 1;
+    animation: logo-blinkink 6s infinite;
 }
 
 #toggle {
@@ -158,6 +159,16 @@ body {
     100% {
         transform: translateY(540px);
     }
+}
+
+@keyframes logo-blinkink {
+    0% {opacity: 1;}
+    89% {opacity: 1;}
+    89.5% {opacity: 0;}
+    90.5% {opacity: 1;}
+    91.5% {opacity: 0;}
+    92.5% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 @keyframes blinkink-block-1 {
